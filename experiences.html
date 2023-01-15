@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EXPERIENCES</title>
+	<link rel="stylesheet" href="css/style_2.css">
+	
+<style>
+		ul
+		{
+			list-style-type: none;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 200px, 200px;
+			overflow: hidden;
+			background-color: palevioletred;
+			width: 55%;
+			height: 50px;
+
+		}
+		li
+		{
+			float: left;
+		}
+
+		li a
+		{
+			display: block;
+			color: ghostwhite;
+			text-align: center;
+			padding: 20px;
+			text-decoration: none;
+		}
+
+		li a:hover
+		{
+			background-color: lightpink;
+		}
+	</style>
+
+	<style>
+		body
+		{
+			background-image: url(images/nature_3.jpg); 
+		}
+	</style>
+
+</head>
+<body>
+
+
+	<center>
+	<h1 style="font-family: Sugar Snow; font-size: 50px; color: lightpink; width: 1000px; height: 60px;">AMIRAH'S EXPERIENCES</h1>
+	</center>
+
+
+	<ul>
+		<li><a href="index.html" target="_blank">HOME</a></li>
+		<li><a href="about_me.html" target="_blank">ABOUT ME</a></li>
+		<li><a href="education.html" target="_blank">EDUCATION</a></li>
+		<li><a href="experiences.html">EXPERIENCES</a></li>
+		<li><a href="family.html" target="_blank">FAMILY</a></li>
+		<li><a href="gallery.html" target=" _blank">GALLERY</a></li>
+	</ul>
+
+	<br>
+
+<center>
+
+	<div class="w3-content" style="max-width:1000px;margin-top:30px">
+
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/amirah_62.jpg" style="width:100%; border: 8px dotted; color: #D9A6A1;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3 style="font-family: sans-serif; font-size: 20px; color: #B5525D">[A DAY WITH US]</h3>
+      <p style="font-family: cursive; font-size: 20px; color: #632626"><b>"We had the best time playing together with kids!"</b></p>   
+    </div>
+  </div>
+
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/amirah_64.jpg" style="width:100%; border: 8px dotted; color: #D9A6A1;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3 style="font-family: sans-serif; font-size: 20px; color: #B5525D"> THE MEMORIES OF D1IM1105A</h3>
+      <p style="font-family: cursive; font-size: 20px; color: #632626"><b>"The atmosphere in Sekolah Kebangsaan Hamzah 1 is so enjoyable!"</b></p>    
+    </div>
+  </div>
+
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/amirah_65.jpg" style="width: 100%;  border: 8px dotted; color: #D9A6A1;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3 style="font-family: sans-serif; font-size: 20px; color: #B5525D">[THE BEST MOMENT EVER]</h3>
+      <p style="font-family: cursive; font-size: 20px; color: #632626"><b>"Thank you, kids - A programme we won't forget."</b></p>    
+    </div>
+  </div>
+   
+</center>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<center>
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+     <h2 style="font-family: tahoma; font-size: 50px; color: #AC7088; background-color: #F2D7D9; width: 100%;"><marquee>STUDENTS OF SEKOLAH KEBANGSAAN HAMZAH 1</marquee></h2>
+    <p style="font-family: tahoma; font-size: 35px; color: #AC7D88"><i>We Love You All!</i></p>
+    <p style="font-family: monospace; font-size: 20px; border: 5px solid ; border-color: #F4BFBF;background-color: palevioletred; color: ghostwhite;">We would like to say thank you to all of you. We are grateful for the time and effort you guys took to share your thoughts and experiences with us. Thank you for everything. </p>
+ </center>
+ 
+<center>
+	<footer>
+		<p style="background-color: lightpink; color: ghostwhite; font-family: centuryGothic; font-size: 20px; height: 25px"> COPYRIGHT &copy; <em id="date"></em>2023 AMIRAH WAHIDA. ALL RIGHT RESERVED</p>
+	</footer>
+</center>
+
+</body>
+</html>

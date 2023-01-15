@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WELCOME TO MY PERSONAL WEBSITE</title>
+	<link rel="stylesheet" href="css/style_1.css">
+
+<style>
+		ul
+		{
+			list-style-type: none;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 200px, 200px;
+			overflow: hidden;
+			background-color: palevioletred;
+			width: 55%;
+			height: 50px;
+
+		}
+		li
+		{
+			float: left;
+		}
+
+		li a
+		{
+			display: block;
+			color: ghostwhite;
+			text-align: center;
+			padding: 20px;
+			text-decoration: none;
+		}
+
+		li a:hover
+		{
+			background-color: lightpink;
+		}
+</style>
+
+<style>
+		body
+		{
+			 background-image: url(images/nature_3.jpg); 
+		}
+</style>
+
+<style> 
+  #clock 
+  { 
+    font-size: 35px;           
+    text-align: right; 
+	  width: 200px;                      
+    border-radius: 20px; 
+    color: #915c6e;
+   } 
+
+</style> 
+
+<style>
+	.mySlides {display: none}
+	
+		img {vertical-align: middle;}
+
+		.slideshow-container 
+		{
+  			max-width: 1000px;
+  			position: relative;
+ 			margin: auto;
+		}
+
+		
+		.text 
+		{
+		    color: #C35C5A;
+			font-size: 15px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 8px;
+			width: 100%;
+			text-align: center;
+
+		}
+
+
+		.numbertext
+		{
+    		color: #DB9D9C;
+   			font-size: 12px;
+    		padding: 8px 12px;
+    		position: absolute;
+    		top: 0;
+		}
+
+
+		.dot
+		{
+		    height: 15px;
+		    width: 15px;
+		    margin: 0 2px;
+		    background-color: #DB9D9C;
+		    border-radius: 50%;
+		    display: inline-block;
+		    transition: background-color 0.6s ease;
+		}
+
+		.active, .dot:hover 
+		{
+		  background-color: #531F1E;
+		}
+
+		.fade
+		{
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+		@keyframes fade
+		{
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+
+		@media only screen and (max-width: 300px) 
+		{
+		  .prev, .next,.text {font-size: 11px}
+		}
+
+</style>
+
+</head>
+<body>
+
+	<center>
+	<h1 style="background-color: white; font-family: Sugar Snow; font-size: 50px; color: #FFABE1; width: 1000px; height: 60px;"><marquee>WELCOME TO MY PERSONAL WEBSITE</marquee></h1>
+	</center>
+
+
+	<div class="icon-bar">
+		<a href="https://twitter.com/myraweydx__" target= _blank; class="twitter"><i class="fa fa-brands fa-twitter"></i></a>
+		<a href="https://instagram.com/amrhwhdaa?igshid=Zjc2ZTc4Nzk=" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+	</div> 
+
+	<center>
+		<div class="slideshow-container">
+
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 4</div>
+	  <img src="images/amirah_1.jpg" style="width: 350px; height: 450px;">
+	  <div class="text">[COLOR-RUN'S PHOTOSHOT BY AAIRA]</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 4</div>
+	  <img src="images/amirah_45.jpg" style="width: 340px; height: 450px; border: ;">
+	  <div class="text">[PEACE FT PHOTOGRAPHER BY YAYAVME]</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 4</div>
+	  <img src="images/amirah_60.jpg" style="width: 300px; height: 450px;">
+	  <div class="text">[PHOTOSHOT BY BEST-FRIEND]</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">4 / 4</div>
+	  <img src="images/amirah_41.jpg" style="width: 250px; height: 450px">
+	  <div class="text">[SELFIE WITH NAD & AIDA</div>
+	</div>
+
+	<br>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	  <span class="dot" onclick="currentSlide(4)"></span> 
+	</div>
+
+	<script>
+	let slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) 
+	{
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) 
+	{
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) 
+	{
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  let dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	    slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	    dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script> <br>
+</center>
+
+	<br>
+
+<center>
+	 <div id="clock">5:10:45</div> 
+  
+    <script> 
+        setInterval(showTime, 1000); 
+        function showTime() { 
+            let time = new Date(); 
+            let hour = time.getHours(); 
+            let min = time.getMinutes(); 
+            let sec = time.getSeconds(); 
+            am_pm = "AM"; 
+  
+            if (hour > 12) { 
+                hour -= 12; 
+                am_pm = "PM"; 
+            } 
+            if (hour == 0) { 
+                hr = 12; 
+                am_pm = "AM"; 
+            } 
+  
+            hour = hour < 10 ? "0" + hour : hour; 
+            min = min < 10 ? "0" + min : min; 
+            sec = sec < 10 ? "0" + sec : sec; 
+  
+            let currentTime = hour + ":"  
+                + min + ":" + sec + am_pm; 
+  
+            document.getElementById("clock") 
+                .innerHTML = currentTime; 
+        } 
+  
+        showTime(); 
+    </script> 
+   </center>
+   
+   <br>
+	
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="about_me.html" target="_blank">ABOUT ME</a></li>
+		<li><a href="education.html" target="_blank">EDUCATION</a></li>
+		<li><a href="experiences.html" target="_blank">EXPERIENCES</a></li>
+		<li><a href="family.html" target="_blank">FAMILY</a></li>
+		<li><a href="gallery.html" target="_blank">GALLERY</a></li>
+
+	</ul>
+
+<br>
+
+<br>
+
+<center>
+	<audio controls autoplay>
+		<source src="music/bol4_2.mp3" type="audio/mp3">
+</center>
+
+<br>
+
+<h2 style="text-align:center; font-family: fantasy; font-size: 45px; color: #F3ABB6; text-shadow: 2px; ">" QUOTES OF THE DAYS "</h2>
+
+<br>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/nature_8.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/nature_9.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/nature_10.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/nature_11.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/nature_12.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/nature_13.png" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/nature_8.png" style="width: 100%" onclick="currentSlide(1)" alt="Self Love">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/nature_9.png" style="width: 100%" onclick="currentSlide(2)" alt="DearSelf">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/nature_10.png" style="width: 100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/nature_11.png" style="width: 100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/nature_12.png" style="width: 100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/nature_13.png" style="width: 100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+
+<script>
+   let slideIndex = 1;
+   showSlides(slideIndex);
+
+   function plusSlides(n) {
+   showSlides(slideIndex += n);
+  }
+
+   function currentSlide(n) {
+   showSlides(slideIndex = n);
+  }
+
+   function showSlides(n) {
+   let i;
+   let slides = document.getElementsByClassName("mySlides");
+   let dots = document.getElementsByClassName("demo");
+   let captionText = document.getElementById("caption");
+   if (n > slides.length) {slideIndex = 1}
+   if (n < 1) {slideIndex = slides.length}
+   for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+   }
+   for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+   }
+   slides[slideIndex-1].style.display = "block";
+   dots[slideIndex-1].className += " active";
+   captionText.innerHTML = dots[slideIndex-1].alt;
+   }   
+</script>
+
+   <br>
+   <br>
+   <br>
+
+<h2 style="text-align:center; font-family: fantasy; font-size: 45px; color:#F3ABB6">" MY GIRLZZZ "</h2>
+
+<br>
+
+<center>
+<video controls autoplay style="width: 600px; height: 300px; "> 
+   	<source  src="video/wahida_4.mp4" type="video/mp4"></video>
+
+ <video controls autoplay style="width: 600px; height: 300px; "> 
+   	<source  src="video/wahida_5.mp4" type="video/mp4"></video>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+  <video controls autoplay style="width: 600px; height: 300px; "> 
+   	<source  src="video/wahida_6.mp4" type="video/mp4"></video>
+</center>
+
+
+
+<center>
+	<footer>
+		<p style="background-color: lightpink; color: ghostwhite; font-family: centuryGothic; font-size: 20px; height: 25px"> COPYRIGHT &copy; <em id="date"></em>2023 AMIRAH WAHIDA. ALL RIGHT RESERVED</p>
+	</footer>
+</center>
+
+</body>
+</html>

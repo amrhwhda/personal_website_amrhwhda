@@ -1,0 +1,34 @@
+
+    * {
+        box-sizing: border-box;
+      }
+
+    .column 
+      {
+        float: left;
+        padding: 10px;
+        height: 300px;
+      }
+
+    .left
+      {
+        width: 45%; 
+      }
+
+    .right 
+      { 
+       width: 55%;
+      }
+
+    .row:after 
+      {
+       content: "Death leaves a heartache no one can heal, love leaves a memory no one can steal";
+        display: table;
+        clear: both;
+        font-family: monospace;
+        font-size: 16.72px;
+      }
+
+    .table,th,td{
+      border: 2px solid black;
+    }
